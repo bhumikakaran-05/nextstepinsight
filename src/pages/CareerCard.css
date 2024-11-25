@@ -1,0 +1,41 @@
+.career-cards-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.career-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.career-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.career-card p {
+  color: #555;
+}
+
+.career-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.career-card ul li {
+  background: #eef0f1;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 4px;
+}

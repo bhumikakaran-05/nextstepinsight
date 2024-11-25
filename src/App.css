@@ -1,36 +1,329 @@
 /* App.css */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/*change as you want from here*/
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
+  /* margin: px; */
+  /* //padding: 100px; */
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   
+  background-color: #dce3e6;
+  background-image: 'images/image.png';
+  background-repeat: repeat(1);
+  background-size: contain;
+  backdrop-filter:blur(6px);
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative; 
 }
 
 h1, h2, h3 {
-  color: #333;
+  color:black;
+  font-size:x-large;
 }
 
-.home, .register, .login, .dashboard, .quiz, .quizResult, .careerSuggestions {
-  width: 100%;
-  max-width: 800px;
-  padding: 20px;
-  margin: auto;
+.home, .login, .dashboard, .quiz, .quizResult, .careerSuggestions {
+  /* width:fit-content;
+  height: max-content;
+  max-width: max-content; */
+  padding: 70px;
+  font-size: x-large;
   text-align: center;
-  background-color: #f6f3ef
 }
+
+.home {
+  height: 100%;
+  margin-top: 150px;
+  font-size: larger;
+  background-color:#ffffff;
+}
+
+
+.dashboard {
+  background-color:#ffffff;
+
+}
+
+
+
+/* Main Content Styling */
+.main-content {
+  padding: 20px;
+  text-align: center;
+  font-size: large;
+}
+
+
+/* Login Page 
+.login {
+  max-width: 400px;
+  margin: auto;
+  margin-top:100px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}*/
+
+.login-cont {
+  padding: 70px;
+  width: 40%;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-size:xx-large;
+  margin-left: 200px;
+  margin-top: 100px;
+
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #eff6f6;
+}
+
+.login input {
+  margin-bottom: 10px;
+  font-size: 20px;
+  border: 1px solid #ddd;
+}
+
+.login button {
+  background-color: #007fb6;
+  color: white;
+  padding: 10px;
+  border: 2px solid #282c34;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.login button:hover {
+  background-color: #eff4f5;
+}
+
+.profile-cont {
+  align-content: center;
+  font-size: x-large;
+  width: 30%;
+  border: 1px solid;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff ;
+  margin-left: 200px;
+  margin-top: 100px;
+  padding: 100px;
+  
+}
+
+/* Explore Page */
+.explore {
+  padding: 20px;
+}
+
+.explore-container {
+  padding: 30px;
+  font-size: large;
+  background-color:#ffffff;;
+}
+
 
 button {
-  background-color: #007BFF;
-  color: white;
+  background-color: #1a73e8;
+  color:white;
   border: none;
   padding: 10px 20px;
   margin-top: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
+  border-radius: 10px;
+  gap:unset;
 }
+
+
+.career-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.career-card {
+  width: 30%;
+  border: 1px solid #ffffff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.career-card iframe {
+  max-width: 100%;
+
+  height: 200px;
+}
+/* career card save button */
+button {
+  /* margin-top: 10px; */
+  margin-right: 10px;
+}
+
+/* Register Page */
+.register {
+  max-width: 400px;
+  margin-top: 100px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.register-cont{
+  text-align:"center";
+  width: 25%;
+  border: 1px solid #ddd;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: azure;
+  margin-left: 400px;
+  margin-top: 200px;
+
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+.register button {
+  background-color: #007fb6;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.register button:hover {
+  background-color: #007fb6;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  width: 600px;
+  max-width: 90%;
+  max-height: 80%;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.modal-header {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h5 {
+  margin: 0;
+}
+
+.modal-header .close {
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(80vh - 120px); /* Adjust for header and footer height */
+}
+
+.modal-footer {
+  padding: 10px 20px;
+  border-top: 1px solid #2285e2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer .btn {
+  margin-left: 10px;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  right: 10px;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+
 
