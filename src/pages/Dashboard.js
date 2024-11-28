@@ -2,8 +2,7 @@ import React from 'react';
 
 function Dashboard() {
   return (
-    
-    <div class="container">
+    <div class="dashboard-container">
         <h1>Explore Your Career Path</h1>
         <p>Choose a category below to explore career options based on your interests or
             academic stream.</p>
@@ -13,7 +12,6 @@ function Dashboard() {
             <div class="career-card">
                 <h3><a href="quiz.html"> Quiz </a></h3>
                 <p>Explore which careers suites you.</p>
-                <a href="quiz.html">Learn More</a>
                 <button onClick={() => window.location.href = '/Quiz'}> Take quiz</button>
             </div>
 
@@ -28,7 +26,6 @@ function Dashboard() {
                 <h3><a href="stream.html"> Streams Wise </a></h3>
                 <p>Explore careers according to your Streams.</p>
                 <a href="stream.html">Learn More</a>
-                <button onClick={() => window.location.href = '/Stream'}> Stream</button>
             </div>
 
 

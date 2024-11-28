@@ -11,7 +11,7 @@ import CareerSuggestions from './pages/CareerSuggestions';
 import Explore from './pages/Explore';
 import Navbar from './pages/Navbar';
 import Profile from './pages/Profile';
-
+import Footer from './pages/Footer';
 
 
 function App() {
@@ -32,6 +32,7 @@ function App() {
         <Route path="/Explore" element={<Explore />} />
         <Route path="/careerSuggestions" element={<CareerSuggestions />} />
         <Route path="/Navbar" element={<Navbar />} />
+        <Route path="/Footer" element={<Footer />} />
         <Route path="/Profile"
           element={
          <Profile /> 
@@ -39,6 +40,7 @@ function App() {
           />
       </Routes>
       </main>
+  <Footer />
     </Router>
   );
 }

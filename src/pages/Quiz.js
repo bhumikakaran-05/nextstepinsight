@@ -58,6 +58,7 @@ function Quiz() {
             resultDiv.innerHTML = `
                 <h2>Your Career Match:</h2>
                 <p>${careerDescription}</p>
+                <a href='career.html'>Click to explore</a>
             `;
         }
 
@@ -66,7 +67,7 @@ function Quiz() {
         [...lastQuestionInputs].forEach(input => {
             input.addEventListener('change', calculateResult);
         });
-
+        calculateResult();
 
 
         // const themeToggle = document.getElementById('themeToggle');
@@ -104,7 +105,7 @@ function Quiz() {
   };
 
   return (
-    <div class="container">
+    <div class="quiz-container">
     <h2>Discover Your Perfect Career Path</h2>
     <p>Answer the questions below to find a career that suits your interests and skills.</p>
     {/* //   <h2>Choose Your Quiz</h2>
@@ -255,12 +256,6 @@ function Quiz() {
       </form>
       <div class="result" id="result"></div>
    
-     {result && (
-        <div id="result1">
-          <h3>Quiz Result:</h3>
-          <p>{result}</p>
-        </div>
-      )}
    </div>
   );
 }
