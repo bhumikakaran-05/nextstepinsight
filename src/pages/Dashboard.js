@@ -1,6 +1,11 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
+ const navigate = useNavigate();
+  function handleClick() {
+    navigate("/Quiz");
+  }
   return (
     <div class="dashboard-container">
         <h1>Explore Your Career Path</h1>
@@ -12,7 +17,7 @@ function Dashboard() {
             <div class="career-card">
                 <h3><a href="quiz.html"> Quiz </a></h3>
                 <p>Explore which careers suites you.</p>
-                <button onClick={() => window.location.href = '/Quiz'}> Take quiz</button>
+                <button onClick={handleClick}>  Take quiz</button>
             </div>
 
             {/* <!-- Commerce Stream --> */}
