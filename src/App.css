@@ -325,5 +325,233 @@ button {
   cursor: pointer;
 }
 
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: var(--container-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 10px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.question:hover {
+  border-color: var(--border-color);
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.question h3 {
+  color: var(--border-color);
+  margin-bottom: 10px;
+}
+
+.options label {
+  display: block;
+  margin: 8px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.options input {
+  margin-right: 10px;
+}
+
+.options input:checked + label {
+  color: var(--selected-option-color);
+  font-weight: bold;
+}
+
+.options label:hover {
+  color: var(--highlight-color);
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.result {
+  text-align: center;
+  padding: 20px;
+}
+
+.result h2 {
+  color: var(--border-color);
+  margin: 0 0 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: var(--header-bg);
+  color: var(--header-text);
+  font-size: 1rem;
+}
+
+footer a {
+  color: var(--border-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
 
 
+/*dashboard*/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #007bff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.career-category {
+  margin-top: 40px;
+}
+
+.career-category h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.career-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.career-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, border 0.3s ease-in-out;
+}
+
+.career-card:hover {
+  transform: scale(1.05);
+  border: 3px solid #007bff;
+  /* Increased border width for better visibility */
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.5);
+  /* Add a shadow for extra effect */
+  transition: transform 0.3s, border 0.3s, box-shadow 0.3s ease-in-out;
+  /* Smooth transition */
+}
+
+.career-card h3 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.career-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.career-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.career-card a:hover {
+  color: #0056b3;
+}
+
+.cta {
+  display: block;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin-top: 40px;
+}
+
+.cta:hover {
+  background-color: #0056b3;
+}
+
+/* stream wise */
+
+.career-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .career-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, border 0.3s ease-in-out;
+        }
+
+        .career-card:hover {
+            transform: scale(1.05);
+            border: 2px solid #007bff;
+        }
+
+        .career-card h3 {
+            color: #007bff;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .career-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .career-card a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .career-card a:hover {
+            color: #0056b3;
+        }
+
+        .cta {
+            display: block;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            margin-top: 40px;
+        }
+
+        .cta:hover {
+            background-color: #0056b3;
+        }
